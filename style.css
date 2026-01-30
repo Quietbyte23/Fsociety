@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background: black;
+  color: #00ff9c;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+nav {
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid #00ff9c;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#terminal {
+  width: 80%;
+  max-width: 800px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #00ff9c;
+  box-shadow: 0 0 15px #00ff9c;
+  position: relative;
+}
+
+#output {
+  min-height: 200px;
+  font-size: 14px;
+  white-space: pre-wrap;
+  overflow-y: auto;
+}
+
+#command {
+  width: 100%;
+  background: black;
+  color: #00ff9c;
+  border: none;
+  outline: none;
+  font-family: monospace;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
